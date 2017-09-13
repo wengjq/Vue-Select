@@ -60,7 +60,7 @@
         },
         methods: {
             select () {
-                if (this.disabled) {
+                if (this.disabled || this.secondSelect) {
                     return false;
                 }
                 this.dispatch('Select', 'on-select-selected', this.value);
@@ -71,7 +71,7 @@
             queryChange (val) {
                 const parsedQuery = val.replace(/(\^|\(|\)|\[|\]|\$|\*|\+|\.|\?|\\|\{|\}|\|)/g, '\\$1');
 
-                if (this.$parent.$options.name === "DropdownMenu") {
+                if (this.$parent.$options.name === "SecondSelectMenu" || this.secondSelect) {
                     this.hidden = false;
                     return;
                 }

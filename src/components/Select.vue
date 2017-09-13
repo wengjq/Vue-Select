@@ -82,7 +82,6 @@ export default {
             selectedSingle: '',    
             selectedMultiple: [],
             query: '',
-            lastQuery: '',
             selectToChangeQuery: false,   
             notFound: false,
             model: this.value,
@@ -314,7 +313,7 @@ export default {
 
             this.$nextTick(() => {
                 this.findChild((child) => {
-                    if (!child.hidden && child.$parent.$options.name !== "DropdownMenu") {
+                    if (!child.hidden && child.$parent.$options.name !== "SecondSelectMenu") {
                         is_hidden = false;
                     }
                 });
@@ -383,6 +382,8 @@ export default {
 .jq-select ::-webkit-input-placeholder {color:#333; font-size:13px;}
 .jq-select ::-moz-placeholder {color:#333; font-size:13px;}
 .jq-select ::-ms-input-placeholder {color:#333; font-size:13px;}
+
+.jq-second-select-menu {padding: 0; list-style: none;}
 
 .jq-select .jq-select-selection .jq-select-placeholder, .jq-select .jq-select-selection .jq-select-selected-value {display: block; height: 30px; line-height: 30px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding-left: 10px; padding-right: 10px;}
 .jq-select .jq-select-arrow {position: absolute; top: 1px; right: 3px; display: block; width: 25px; height: 28px; background: url(../assets/select.png) no-repeat; background-position: 7px -13px; transition: all .3s;}
