@@ -2,7 +2,7 @@
 
 > A vue component.
   use popper.js.
-  Reference iview.
+  refer iview for learning.
 
 > Demo Address
 [vue-select](https://wengjq.github.io/GithubPage/Vue-Select/index.html)
