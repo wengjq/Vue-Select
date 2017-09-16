@@ -1,6 +1,8 @@
 # vue-select
 
-> A vue component.Reference iview.
+> A vue component.
+  use popper.js.
+  Reference iview.
 
 > Demo Address
 [vue-select](https://wengjq.github.io/GithubPage/Vue-Select/index.html)
