@@ -1,6 +1,9 @@
 # vue-select
 
-> A vue component
+> A vue component.Reference iview.
+
+> Demo Address
+[vue-select](https://wengjq.github.io/GithubPage/Vue-Select/index.html)
 
 ## Build Setup
 
