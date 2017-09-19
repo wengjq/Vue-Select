@@ -49,7 +49,7 @@
 
         forceAbsolute: false,
 
-        forceFixed: false,  //引入fixed参数
+        forceFixed: false  //引入fixed参数
     };
 
     /**
